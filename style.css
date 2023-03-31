@@ -1,0 +1,35 @@
+body{
+    margin: 0;
+}
+
+div#bigPictureContainer {
+    display: flex;
+    height: 80vh;
+}
+div#leftArrow,
+div#rightArrow {
+    flex: 1;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+div#leftArrow > i,
+div#rightArrow > i {
+    flex: 1;
+}
+div#bigImagine {
+    overflow: hidden;
+    flex: 10;
+}
+div#bigImagine > img {
+    max-width: 100%;
+
+}
+div#thumbnailContainer {
+display: flex;
+height: 20vh;
+overflow: hidden;
+}
+img.thumbnail {
+    margin: 1rem;
+}
