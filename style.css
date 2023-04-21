@@ -1,4 +1,4 @@
-body{
+body {
     margin: 0;
 }
 
@@ -15,21 +15,38 @@ div#rightArrow {
 }
 div#leftArrow > i,
 div#rightArrow > i {
-    flex: 1;
+flex: 1;
 }
-div#bigImagine {
-    overflow: hidden;
+div#bigImage {
     flex: 10;
-}
-div#bigImagine > img {
-    max-width: 100%;
+    overflow: hidden;
 
 }
+div#bigImage > img {
+    max-width: 100%;
+    
+}
 div#thumbnailContainer {
-display: flex;
-height: 20vh;
-overflow: hidden;
+    display: flex;
+    height: 20vh;
+    overflow: hidden;
 }
 img.thumbnail {
     margin: 1rem;
+}
+div#imageOverlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+div#imageOverlay img {
+    max-width: 90%;
+    max-height: 90%;
+    flex: 1;
 }
